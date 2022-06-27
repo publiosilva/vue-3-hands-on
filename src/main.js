@@ -12,22 +12,16 @@ app.use(router);
 app.use(
   VueGtag,
   {
-    appName: "My application 1",
+    appName: "My application",
     pageTrackerScreenviewEnabled: true,
     config: {
       id: "G-1ZGCVS46HC",
     },
-  },
-  router
-);
-app.use(
-  VueGtag,
-  {
-    appName: "My application 2",
-    pageTrackerScreenviewEnabled: true,
-    config: {
-      id: "G-2FDM1583YR",
-    },
+    includes: [
+      {
+        id: "G-2FDM1583YR",
+      },
+    ],
   },
   router
 );

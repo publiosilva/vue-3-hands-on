@@ -12,10 +12,21 @@ app.use(router);
 app.use(
   VueGtag,
   {
-    appName: "My application",
+    appName: "My application 1",
     pageTrackerScreenviewEnabled: true,
     config: {
       id: "G-1G1DQGB7L4",
+    },
+  },
+  router
+);
+app.use(
+  VueGtag,
+  {
+    appName: "My application 2",
+    pageTrackerScreenviewEnabled: true,
+    config: {
+      id: "G-2FDM1583YR",
     },
   },
   router

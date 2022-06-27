@@ -15,7 +15,7 @@ app.use(
     appName: "My application",
     pageTrackerScreenviewEnabled: true,
     config: {
-      id: "G-1G1DQGB7L4",
+      id: "G-1ZGCVS46HC",
     },
   },
   router

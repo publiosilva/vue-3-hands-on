@@ -8,8 +8,10 @@
 </template>
 
 <script setup>
+import { event } from "vue-gtag";
+
 function track() {
-  this.$gtag.event("anything A", {
+  event("anything A", {
     event_category: "anything B",
     event_label: "anything C",
     value: "anything D",
